@@ -11,12 +11,11 @@ namespace Assets.Scripts
 		public float jumpForce = 400f;
 		public float jumpCut = 0.8f;
 		public float jumpControlTime = 0.6f;
-		public float dashForce = 400f;
-		public float dashCooldown = 1f;
-		public float dashControlTime = 1f;
-		public float dashSmoothing = 0.6f;
 		public float speedSmoothing = 0.2f;
 		public float stopSmoothing = 0.05f;
+		public float fireCooldown = 0.2f;
+		public GameObject projectile;
+		public float projectileSpeed = 1f;
 
 		private bool isFacing = true;
 		private bool isMoving = false;
@@ -26,17 +25,15 @@ namespace Assets.Scripts
 		private float jumpInputLast = 0f;
 		private float groundedInputLast = 0f;
 		private float jumpTimeLast = 0f;
-		private float dashTimeLast = 0f;
+		private float fireTimeLast = 0f;
 
 		private int inputLevel = 0;
 		private float inputMove = 0f;
 		private bool inputJump = false;
-		private bool inputDash = false;
+		private bool inputFire = false;
 
 		public UnityEvent JumpStarted;
 		public UnityEvent JumpEnded;
-		public UnityEvent DashStarted;
-		public UnityEvent DashEnded;
 		public UnityEvent MoveStarted;
 		public UnityEvent MoveEnded;
 
@@ -64,8 +61,6 @@ namespace Assets.Scripts
 		{
 			if (JumpStarted == null) JumpStarted = new UnityEvent();
 			if (JumpEnded == null) JumpEnded = new UnityEvent();
-			if (DashStarted == null) DashStarted = new UnityEvent();
-			if (DashEnded == null) DashEnded = new UnityEvent();
 			if (MoveStarted == null) MoveStarted = new UnityEvent();
 			if (MoveEnded == null) MoveEnded = new UnityEvent();
 		}
@@ -74,7 +69,7 @@ namespace Assets.Scripts
 		{
 			inputMove = InputManager.GetHorzAxis(inputLevel);
 			inputJump = InputManager.GetKey(KeyCode.Space, inputLevel);
-			inputDash = InputManager.GetKey(KeyCode.LeftShift, inputLevel);
+			inputFire = InputManager.GetKey(KeyCode.LeftShift, inputLevel);
 		}
 
 		public void FixedUpdate()
@@ -144,14 +139,8 @@ namespace Assets.Scripts
 			float currMove = RigidBody().velocity.x;
 			float threshold = 0.1f;
 
-			// Dashing
-			if (dashTimeLast <= dashControlTime)
-			{
-				Vector3 targetVelocity = new Vector2(0, 0);
-				RigidBody().velocity = Vector3.SmoothDamp(RigidBody().velocity, targetVelocity, ref v, dashSmoothing);
-			}
 			// Speeding up
-			else if (((newMove >= -threshold && currMove >= -threshold) || (newMove <= threshold && currMove <= threshold)) && Mathf.Abs(newMove) >= Mathf.Abs(currMove))
+			if (((newMove >= -threshold && currMove >= -threshold) || (newMove <= threshold && currMove <= threshold)) && Mathf.Abs(newMove) >= Mathf.Abs(currMove))
 			{
 				Vector3 targetVelocity = new Vector2(newMove, RigidBody().velocity.y);
 				RigidBody().velocity = Vector3.SmoothDamp(RigidBody().velocity, targetVelocity, ref v, speedSmoothing);
@@ -186,31 +175,17 @@ namespace Assets.Scripts
 				JumpStarted.Invoke();
 			}
 
-			// If the dash has ended
-			if (dashTimeLast <= dashControlTime && (dashTimeLast + Time.deltaTime) > dashControlTime)
-			{
-				RigidBody().velocity = new Vector2(0, 0);
-				DashEnded.Invoke();
-			}
-
-			// If the player should dash
-			if (inputDash && dashTimeLast > dashCooldown)
-			{
-				float force = dashForce * (isFacing ? 1 : -1);
-				RigidBody().AddForce(new Vector2(force, 0f));
-				if (RigidBody().velocity.y <= threshold)
-				{
-					RigidBody().velocity = new Vector2(RigidBody().velocity.x, 0f);
-				}
-				dashTimeLast = 0;
-				DashStarted.Invoke();
-			}
-
-			if (dashTimeLast <= dashCooldown)
-				dashTimeLast += Time.deltaTime;
-
 			#endregion
-		}
 
-	}
+			#region Fire
+			fireTimeLast -= Time.deltaTime;
+			if (inputFire && fireTimeLast <= 0)
+            {
+				fireTimeLast = fireCooldown;
+				Instantiate(projectile).GetComponent<Rigidbody2D>().velocity = new Vector2(isFacing ? projectileSpeed : -projectileSpeed, 0);
+            }
+            #endregion
+        }
+
+    }
 }
