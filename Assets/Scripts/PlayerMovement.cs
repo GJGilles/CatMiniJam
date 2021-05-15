@@ -182,7 +182,9 @@ namespace Assets.Scripts
 			if (inputFire && fireTimeLast <= 0)
             {
 				fireTimeLast = fireCooldown;
-				Instantiate(projectile).GetComponent<Rigidbody2D>().velocity = new Vector2(isFacing ? projectileSpeed : -projectileSpeed, 0);
+				var inst = Instantiate(projectile);
+				inst.transform.position = transform.position;
+				inst.GetComponent<Rigidbody2D>().velocity = new Vector2(isFacing ? projectileSpeed : -projectileSpeed, 0);
             }
             #endregion
         }
