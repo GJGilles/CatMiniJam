@@ -37,5 +37,10 @@ namespace Assets.Scripts
                 rb.velocity = new Vector2(isFacing ? moveSpeed : -moveSpeed, rb.velocity.y);
             }
         }
+
+        public void Destroy()
+        {
+            Destroy(gameObject);
+        }
     }
 }
