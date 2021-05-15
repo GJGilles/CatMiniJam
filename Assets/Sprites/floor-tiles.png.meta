@@ -1,67 +1,76 @@
 fileFormatVersion: 2
-guid: c1d3a892beaf04943bd9fcc19883c6a3
+guid: 3129196b422d75c4a8ab7e6e59542988
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9205980483787862885
-    second: ground_tiles_0
+      213: -7360323005471336529
+    second: floor-tiles_0
   - first:
-      213: -2836822536050358539
-    second: ground_tiles_1
+      213: 4562469129879969737
+    second: floor-tiles_1
   - first:
-      213: -8922166342787202985
-    second: ground_tiles_2
+      213: -2936491994708073449
+    second: floor-tiles_2
   - first:
-      213: 5129788722007358300
-    second: ground_tiles_3
+      213: -6197634862816379647
+    second: floor-tiles_3
   - first:
-      213: 3622270379842419072
-    second: ground_tiles_4
+      213: 4805770580723869615
+    second: floor-tiles_4
   - first:
-      213: -3746973639202915424
-    second: ground_tiles_5
+      213: 6448704257479296127
+    second: floor-tiles_5
   - first:
-      213: 5121035691876610764
-    second: ground_tiles_6
+      213: -6450846866218040605
+    second: floor-tiles_6
   - first:
-      213: -4064334710206878796
-    second: ground_tiles_7
+      213: -7330027995651628111
+    second: floor-tiles_7
   - first:
-      213: 4504564902173814553
-    second: ground_tiles_8
+      213: 1960890626738004914
+    second: floor-tiles_8
   - first:
-      213: -2990161598630248016
-    second: ground_tiles_9
+      213: -6788381451796745082
+    second: floor-tiles_9
   - first:
-      213: 8944389078582149052
-    second: ground_tiles_10
+      213: -5436460964561735407
+    second: floor-tiles_10
   - first:
-      213: -113492593319396201
-    second: ground_tiles_11
+      213: 4089674214415459414
+    second: floor-tiles_11
   - first:
-      213: 918274793318615020
-    second: ground_tiles_12
+      213: -4742731005441632041
+    second: floor-tiles_12
   - first:
-      213: 9055990191807384686
-    second: ground_tiles_13
+      213: -7437176088198726924
+    second: floor-tiles_13
   - first:
-      213: -5855611861024558460
-    second: ground_tiles_14
+      213: 1561338244409294257
+    second: floor-tiles_14
   - first:
-      213: -4805259394762564131
-    second: ground_tiles_15
+      213: -3283617228621788733
+    second: floor-tiles_15
   - first:
-      213: 1415919747550189365
-    second: ground_tiles_16
+      213: -6531713743618368668
+    second: floor-tiles_16
   - first:
-      213: -2980967796902528606
-    second: ground_tiles_17
+      213: 1325011529634958483
+    second: floor-tiles_17
   - first:
-      213: -7906295322484311003
-    second: ground_tiles_18
+      213: -6243088750173476672
+    second: floor-tiles_18
   - first:
-      213: -7031803773232227132
-    second: ground_tiles_19
+      213: -5009575576480524088
+    second: floor-tiles_19
+  - first:
+      213: 4580217100132393221
+    second: floor-tiles_20
+  - first:
+      213: -5135587834120726191
+    second: floor-tiles_21
+  - first:
+      213: -2389798364292957454
+    second: floor-tiles_22
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -106,7 +115,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -128,7 +137,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -140,7 +149,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,421 +160,510 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ground_tiles_0
+      name: floor-tiles_0
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 16
-        height: 16
+        x: 24
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: -4}
+        - {x: 0, y: -4}
+        - {x: 4, y: 0}
+        - {x: 4, y: 4}
       tessellationDetail: 0
       bones: []
-      spriteID: b9c45ae7689cd3080800000000000000
-      internalID: -9205980483787862885
+      spriteID: fa7deb22931ead990800000000000000
+      internalID: -7360323005471336529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_1
+      name: floor-tiles_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 16
+        x: 32
+        y: 24
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f645effee491a8d0800000000000000
-      internalID: -2836822536050358539
+      spriteID: 9cf5e292085215f30800000000000000
+      internalID: 4562469129879969737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_2
+      name: floor-tiles_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714a5a9c61c7f37d0800000000000000
+      internalID: -2936491994708073449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 4}
+        - {x: -4, y: 0}
+        - {x: 0, y: -4}
+        - {x: 4, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10db042cde39df9a0800000000000000
+      internalID: -6197634862816379647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_4
       rect:
         serializedVersion: 2
         x: 16
         y: 16
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: 4}
       tessellationDetail: 0
       bones: []
-      spriteID: 750093f9bf81e2480800000000000000
-      internalID: -8922166342787202985
+      spriteID: fa7a11091e681b240800000000000000
+      internalID: 4805770580723869615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_3
+      name: floor-tiles_5
       rect:
         serializedVersion: 2
         x: 32
         y: 16
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5bbd04f9aba03740800000000000000
-      internalID: 5129788722007358300
+      spriteID: f744a900b566e7950800000000000000
+      internalID: 6448704257479296127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_4
+      name: floor-tiles_6
       rect:
         serializedVersion: 2
-        x: 48
+        x: 40
         y: 16
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0893de608b3e44230800000000000000
-      internalID: 3622270379842419072
+      spriteID: 3e2c1a604fcf976a0800000000000000
+      internalID: -6450846866218040605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_5
+      name: floor-tiles_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: 4}
+        - {x: -4, y: -4}
+        - {x: 4, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b32485cf52864a90800000000000000
+      internalID: -7330027995651628111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3ac12c2ab763b10800000000000000
+      internalID: 1960890626738004914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -4}
+        - {x: 4, y: -4}
+        - {x: 4, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684fdc53903dac1a0800000000000000
+      internalID: -6788381451796745082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111350c6e8fcd84b0800000000000000
+      internalID: -5436460964561735407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654ee4da70171c830800000000000000
+      internalID: 4089674214415459414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d89b63574f6e2eb0800000000000000
+      internalID: -4742731005441632041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_13
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fab2ea60c7d9c890800000000000000
+      internalID: -7437176088198726924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_14
       rect:
         serializedVersion: 2
         x: 64
-        y: 16
-        width: 16
-        height: 16
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -4, y: 4}
+        - {x: -4, y: -4}
+        - {x: 4, y: -4}
       tessellationDetail: 0
       bones: []
-      spriteID: 0abbe84d353100cc0800000000000000
-      internalID: -3746973639202915424
+      spriteID: 1bd7f386cdcfaa510800000000000000
+      internalID: 1561338244409294257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_6
+      name: floor-tiles_15
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 16
-        height: 16
+        x: 72
+        y: 8
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3, y: -4}
+        - {x: -4, y: -3}
+        - {x: -4, y: -4}
       tessellationDetail: 0
       bones: []
-      spriteID: cc2f66054d2911740800000000000000
-      internalID: 5121035691876610764
+      spriteID: 3c945a5278f3e62d0800000000000000
+      internalID: -3283617228621788733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_7
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4bb24d56d159897c0800000000000000
-      internalID: -4064334710206878796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_8
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91f23cd89ed638e30800000000000000
-      internalID: 4504564902173814553
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b141ac5edfc086d0800000000000000
-      internalID: -2990161598630248016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_10
+      name: floor-tiles_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbfb5c14a7ad02c70800000000000000
-      internalID: 8944389078582149052
+      spriteID: 46b1719e4f0ba55a0800000000000000
+      internalID: -6531713743618368668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_11
+      name: floor-tiles_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c403b47f2636210800000000000000
+      internalID: 1325011529634958483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_18
       rect:
         serializedVersion: 2
         x: 16
         y: 0
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79c3f82761bcc6ef0800000000000000
-      internalID: -113492593319396201
+      spriteID: 0c82ca8ebd71c59a0800000000000000
+      internalID: -6243088750173476672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_12
+      name: floor-tiles_19
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8d7681e896a7ab0800000000000000
+      internalID: -5009575576480524088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_20
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce783fd2f0e5ebc00800000000000000
-      internalID: 918274793318615020
+      spriteID: 501af8f7f23309f30800000000000000
+      internalID: 4580217100132393221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ground_tiles_13
+      name: floor-tiles_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1599a6a031abab8b0800000000000000
+      internalID: -5135587834120726191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor-tiles_22
       rect:
         serializedVersion: 2
         x: 48
         y: 0
-        width: 16
-        height: 16
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6cc91849175dad70800000000000000
-      internalID: 9055990191807384686
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_14
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48231196900bcbea0800000000000000
-      internalID: -5855611861024558460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_15
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ddd91913a0a405db0800000000000000
-      internalID: -4805259394762564131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_16
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 537903f228b56a310800000000000000
-      internalID: 1415919747550189365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_17
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a9feb2259971a6d0800000000000000
-      internalID: -2980967796902528606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_18
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 52c7df52b42374290800000000000000
-      internalID: -7906295322484311003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ground_tiles_19
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ccdd3e69b30a6e90800000000000000
-      internalID: -7031803773232227132
+      spriteID: 2fa3283ac0bb5ded0800000000000000
+      internalID: -2389798364292957454
       vertices: []
       indices: 
       edges: []

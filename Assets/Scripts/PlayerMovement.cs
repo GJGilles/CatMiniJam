@@ -36,6 +36,7 @@ namespace Assets.Scripts
 		public UnityEvent JumpEnded;
 		public UnityEvent MoveStarted;
 		public UnityEvent MoveEnded;
+		public UnityEvent ThrowStarted;
 
 
 		private Rigidbody2D RigidBody() { return GetComponent<Rigidbody2D>(); }
@@ -63,6 +64,7 @@ namespace Assets.Scripts
 			if (JumpEnded == null) JumpEnded = new UnityEvent();
 			if (MoveStarted == null) MoveStarted = new UnityEvent();
 			if (MoveEnded == null) MoveEnded = new UnityEvent();
+			if (ThrowStarted == null) ThrowStarted = new UnityEvent();
 		}
 
 		public void Update()
@@ -185,6 +187,7 @@ namespace Assets.Scripts
 				var inst = Instantiate(projectile);
 				inst.transform.position = transform.position;
 				inst.GetComponent<Rigidbody2D>().velocity = new Vector2(isFacing ? projectileSpeed : -projectileSpeed, 0);
+				ThrowStarted.Invoke();
             }
             #endregion
         }
