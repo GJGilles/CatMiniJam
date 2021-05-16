@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4349068870851522060}
   - component: {fileID: 3952587600786843744}
   - component: {fileID: 6818269104701428043}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DamageBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  rb: {fileID: -3536874269992127720}
+  damageMask:
+    serializedVersion: 2
+    m_Bits: 64
+  rb: {fileID: 0}
   OnDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -104,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  iTime: 0.5
+  iTime: 0
   OnDamage:
     m_PersistentCalls:
       m_Calls: []
@@ -142,7 +145,7 @@ GameObject:
   - component: {fileID: -8660607212257545234}
   - component: {fileID: -3536874269992127720}
   - component: {fileID: 4100327450947620886}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BasicEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +231,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.091223806, y: -0.62390566}
+  m_Offset: {x: 0.091223806, y: -0.18733455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -239,7 +242,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6805844, y: 0.25218868}
+  m_Size: {x: 0.6805844, y: 1.1253309}
   m_EdgeRadius: 0
 --- !u!50 &-3536874269992127720
 Rigidbody2D:
@@ -261,7 +264,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &4100327450947620886
 MonoBehaviour:
   m_ObjectHideFlags: 0

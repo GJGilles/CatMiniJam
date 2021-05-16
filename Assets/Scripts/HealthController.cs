@@ -56,5 +56,10 @@ namespace Assets.Scripts
                 }
             }
         }
+
+        public void Destroy()
+        {
+            Destroy(gameObject);
+        }
     }
 }

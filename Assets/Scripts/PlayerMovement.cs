@@ -185,7 +185,7 @@ namespace Assets.Scripts
             {
 				fireTimeLast = fireCooldown;
 				var inst = Instantiate(projectile);
-				inst.transform.position = transform.position;
+				inst.transform.position = transform.position - new Vector3(0, 0.25f);
 				inst.GetComponent<Rigidbody2D>().velocity = new Vector2(isFacing ? projectileSpeed : -projectileSpeed, 0);
 				ThrowStarted.Invoke();
             }
