@@ -35,6 +35,13 @@ namespace Assets.Scripts
             transform.localScale = theScale;
         }
 
+        public void BounceBack()
+        {
+            var rb = GetComponent<Rigidbody2D>();
+            rb.velocity = new Vector2(isFacing ? -moveSpeed : moveSpeed, rb.velocity.y + 3);
+            stopped = stopTime;
+        }
+
         public void Update()
         {
             if (stopped > 0)
