@@ -14,7 +14,7 @@ namespace Assets.Scripts
 
         public float speed = 0.5f;
 
-        private SceneEnum next = SceneEnum.None;
+        private string next;
         private float opacity = 1;
 
         private int inputLevel = 1;
@@ -26,9 +26,13 @@ namespace Assets.Scripts
 
         public void Update()
         {
-            if (InputManager.GetKey(KeyCode.R, inputLevel)) LoadScene(SceneEnum.Game);
+            if (InputManager.GetKey(KeyCode.R, inputLevel))
+            {
+                string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+                LoadScene(scene);
+            }
 
-            if (next != SceneEnum.None)
+            if (next != null)
             {
                 if (opacity >= 1)
                 {
@@ -45,9 +49,9 @@ namespace Assets.Scripts
             GetComponent<UnityEngine.UI.Image>().color = new Color(0f, 0f, 0f, opacity);
         }
 
-        private void LoadScene(SceneEnum scene)
+        private void LoadScene(string scene)
         {
-            if (next == SceneEnum.None)
+            if (next == null)
             {
                 next = scene;
             }
@@ -55,7 +59,7 @@ namespace Assets.Scripts
 
         #region Scene Loaders
 
-        public void LoadSceneGame() { LoadScene(SceneEnum.Game); }
+        public void LoadSceneGame() { LoadScene(SceneEnum.Game.ToString()); }
 
         #endregion
 

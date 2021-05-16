@@ -11,7 +11,8 @@ namespace Assets.Scripts
             IsJump,
             IsThrow,
             IsHurt,
-            IsDead
+            IsDead,
+            IsDied
         }
 
         private Animator Animator() { return GetComponent<Animator>();  }
@@ -39,6 +40,11 @@ namespace Assets.Scripts
         public void SetDead()
         {
             Animator().SetTrigger(PlayerAnimEnum.IsDead.ToString());
+        }
+
+        public void SetDied()
+        {
+            Animator().SetBool(PlayerAnimEnum.IsDied.ToString(), true);
         }
     }
 }

@@ -26,10 +26,12 @@ namespace Assets.Scripts
             {
                 currTime = 0;
 
-                var inst = Instantiate(projectileObj);
+                var inst = Instantiate(projectileObj, transform);
                 inst.transform.position = transform.position - new Vector3(0, 0.25f);
                 inst.transform.rotation = transform.rotation;
                 inst.GetComponent<Rigidbody2D>().velocity = new Vector2(-projectileSpeed, 0);
+                inst.transform.SetParent(null);
+                OnThrow.Invoke();
             }
         }
     }
