@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Assets.Managers;
 
 namespace Assets.Scripts
 {
@@ -17,9 +17,17 @@ namespace Assets.Scripts
         private SceneEnum next = SceneEnum.None;
         private float opacity = 1;
 
+        private int inputLevel = 1;
+
+        public void Start()
+        {
+            InputManager.UnblockKeys(0);
+        }
 
         public void Update()
         {
+            if (InputManager.GetKey(KeyCode.R, inputLevel)) LoadScene(SceneEnum.Game);
+
             if (next != SceneEnum.None)
             {
                 if (opacity >= 1)
@@ -31,6 +39,7 @@ namespace Assets.Scripts
             else if (opacity > 0)
             {
                 opacity -= Time.deltaTime * speed;
+
             }
 
             GetComponent<UnityEngine.UI.Image>().color = new Color(0f, 0f, 0f, opacity);

@@ -52,7 +52,19 @@ MonoBehaviour:
   rb: {fileID: 0}
   OnDamage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8093710094433903530}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetThrow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnHit:
     m_PersistentCalls:
       m_Calls:
@@ -81,7 +93,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03257993, y: -0.060272872}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -92,7 +104,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.93484014, y: 0.87945426}
+  m_Size: {x: 0.75, y: 0.75}
   m_EdgeRadius: 0
 --- !u!114 &6818269104701428043
 MonoBehaviour:
@@ -110,7 +122,19 @@ MonoBehaviour:
   iTime: 0
   OnDamage:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8093710094433903530}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetHurt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   InvincibleStart:
     m_PersistentCalls:
       m_Calls: []
@@ -120,9 +144,9 @@ MonoBehaviour:
   OnDeath:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4100327450947620886}
-        m_TargetAssemblyTypeName: Assets.Scripts.EnemyController, Assembly-CSharp
-        m_MethodName: Destroy
+      - m_Target: {fileID: 8093710094433903530}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetDead
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -145,6 +169,8 @@ GameObject:
   - component: {fileID: -8660607212257545234}
   - component: {fileID: -3536874269992127720}
   - component: {fileID: 4100327450947620886}
+  - component: {fileID: 331459523}
+  - component: {fileID: 8093710094433903530}
   m_Layer: 7
   m_Name: BasicEnemy
   m_TagString: Untagged
@@ -207,7 +233,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 29b558b5a962f5c4d81f91ba51ae323e, type: 3}
+  m_Sprite: {fileID: 2545901586244600784, guid: 77ee32278cadb324ab4c0e25dc022446, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -231,18 +257,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.091223806, y: -0.18733455}
+  m_Offset: {x: 0.061834455, y: -0.062429905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.5, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6805844, y: 1.1253309}
+  m_Size: {x: 0.62180567, y: 0.8755212}
   m_EdgeRadius: 0
 --- !u!50 &-3536874269992127720
 Rigidbody2D:
@@ -279,4 +305,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   stopTime: 0.5
-  isFacing: 1
+  OnWalkStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8093710094433903530}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetWalk
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnWalkEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8093710094433903530}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetWalk
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &331459523
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222176902566495648}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 230066e77b2019549b9f182e0d496f2a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8093710094433903530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3222176902566495648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be0e944f3d932a45b72f093c6719686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

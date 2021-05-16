@@ -49,10 +49,7 @@ namespace Assets.Managers
 
         public static bool UnblockKeys(int level)
         {
-            if (level != keyBlockLevel)
-                return false;
-
-            keyBlockLevel--;
+            keyBlockLevel = level;
             return true;
         }
     }

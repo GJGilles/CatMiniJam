@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -4003238538064368814}
   - component: {fileID: -7268863741049211213}
   - component: {fileID: 878098224517408268}
+  - component: {fileID: 8743889344184587454}
+  - component: {fileID: 3923422550332769401}
   m_Layer: 0
   m_Name: WoodCrate
   m_TagString: Untagged
@@ -148,19 +150,10 @@ MonoBehaviour:
   iTime: 0
   OnDamage:
     m_PersistentCalls:
-      m_Calls: []
-  InvincibleStart:
-    m_PersistentCalls:
-      m_Calls: []
-  InvincibleEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  OnDeath:
-    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 878098224517408268}
-        m_TargetAssemblyTypeName: Assets.Scripts.HealthController, Assembly-CSharp
-        m_MethodName: Destroy
+      - m_Target: {fileID: 3923422550332769401}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetHurt
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -170,3 +163,55 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  InvincibleStart:
+    m_PersistentCalls:
+      m_Calls: []
+  InvincibleEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3923422550332769401}
+        m_TargetAssemblyTypeName: Assets.Scripts.AnimationController, Assembly-CSharp
+        m_MethodName: SetDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &8743889344184587454
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316363667239682340}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9391045a548f8b641ba802ef48ce7807, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3923422550332769401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316363667239682340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be0e944f3d932a45b72f093c6719686, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

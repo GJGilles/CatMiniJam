@@ -58,6 +58,11 @@ namespace Assets.Scripts
 			transform.localScale = theScale;
 		}
 
+		public void Die()
+        {
+			InputManager.BlockKeys(1);
+        }
+
 		public void Start()
 		{
 			if (JumpStarted == null) JumpStarted = new UnityEvent();

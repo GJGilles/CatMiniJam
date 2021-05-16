@@ -99,7 +99,7 @@ MonoBehaviour:
   damage: 1
   damageMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 246
   rb: {fileID: 0}
   OnDamage:
     m_PersistentCalls:

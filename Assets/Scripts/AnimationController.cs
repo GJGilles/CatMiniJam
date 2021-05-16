@@ -3,14 +3,15 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public class PlayerAnimation : MonoBehaviour
+    public class AnimationController : MonoBehaviour
     {
         private enum PlayerAnimEnum
         {
             IsWalk,
             IsJump,
             IsThrow,
-            IsHurt
+            IsHurt,
+            IsDead
         }
 
         private Animator Animator() { return GetComponent<Animator>();  }
@@ -33,6 +34,11 @@ namespace Assets.Scripts
         public void SetHurt()
         {
             Animator().SetTrigger(PlayerAnimEnum.IsHurt.ToString());
+        }
+
+        public void SetDead()
+        {
+            Animator().SetTrigger(PlayerAnimEnum.IsDead.ToString());
         }
     }
 }

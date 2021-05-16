@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 namespace Assets.Scripts
@@ -9,14 +10,23 @@ namespace Assets.Scripts
     {
         public float moveSpeed = 2f;
         public float stopTime = 0.5f;
-        public bool isFacing = true;
 
+        private bool isFacing = false;
         private float stopped = 0f;
 
+        public UnityEvent OnWalkStart;
+        public UnityEvent OnWalkEnd;
+
+        public void Start()
+        {
+            if (OnWalkStart == null) OnWalkStart = new UnityEvent();
+            if (OnWalkEnd == null) OnWalkEnd = new UnityEvent();
+        }
 
         public void Turn()
         {
             stopped = stopTime;
+            OnWalkEnd.Invoke();
             GetComponent<Rigidbody2D>().velocity = new Vector2();
 
             isFacing = !isFacing;
@@ -35,6 +45,7 @@ namespace Assets.Scripts
             {
                 var rb = GetComponent<Rigidbody2D>();
                 rb.velocity = new Vector2(isFacing ? moveSpeed : -moveSpeed, rb.velocity.y);
+                OnWalkStart.Invoke();
             }
         }
 
