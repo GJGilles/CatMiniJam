@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -2283197536906117538}
   - component: {fileID: -527385603743856441}
   - component: {fileID: -5785199809748869238}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,8 +148,7 @@ MonoBehaviour:
   damage: 1
   damageMask:
     serializedVersion: 2
-    m_Bits: 4294967295
-  rb: {fileID: -2283197536906117538}
+    m_Bits: 129
   OnDamage:
     m_PersistentCalls:
       m_Calls:

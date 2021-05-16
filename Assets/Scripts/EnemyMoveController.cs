@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 namespace Assets.Scripts
 {
-    public class EnemyController : MonoBehaviour
+    public class EnemyMoveController : MonoBehaviour
     {
         public float moveSpeed = 2f;
         public float stopTime = 0.5f;
