@@ -9,18 +9,21 @@ namespace Assets.Scripts
         public enum SceneEnum
         {
             None = -1,
-            Game,
+            Level1,
+            Level2,
         }
 
-        public float speed = 0.5f;
+        public float entryTime = 0.5f;
+        public float exitTime = 0.5f;
 
         private string next;
-        private float opacity = 1;
+        private float currentTime = 0f;
 
         private int inputLevel = 1;
 
         public void Start()
         {
+            Time.timeScale = 1;
             InputManager.UnblockKeys(0);
         }
 
@@ -34,19 +37,20 @@ namespace Assets.Scripts
 
             if (next != null)
             {
-                if (opacity >= 1)
+                if (currentTime >= exitTime)
                 {
                     UnityEngine.SceneManagement.SceneManager.LoadScene(next.ToString());
                 }
-                opacity += Time.deltaTime * speed;
+                currentTime += Time.unscaledDeltaTime;
+                var rect = GetComponent<RectTransform>();
+                rect.anchoredPosition = rect.rect.width * new Vector2(1 - currentTime / exitTime, 0);
             } 
-            else if (opacity > 0)
+            else if (currentTime < entryTime)
             {
-                opacity -= Time.deltaTime * speed;
-
+                currentTime += Time.unscaledDeltaTime;
+                var rect = GetComponent<RectTransform>();
+                rect.anchoredPosition = rect.rect.width * new Vector2(-currentTime / entryTime, 0);
             }
-
-            GetComponent<UnityEngine.UI.Image>().color = new Color(0f, 0f, 0f, opacity);
         }
 
         private void LoadScene(string scene)
@@ -54,12 +58,14 @@ namespace Assets.Scripts
             if (next == null)
             {
                 next = scene;
+                currentTime = 0;
             }
         }
 
         #region Scene Loaders
 
-        public void LoadSceneGame() { LoadScene(SceneEnum.Game.ToString()); }
+        public void LoadSceneLevel1() { LoadScene(SceneEnum.Level1.ToString()); }
+        public void LoadSceneLevel2() { LoadScene(SceneEnum.Level2.ToString()); }
 
         #endregion
 

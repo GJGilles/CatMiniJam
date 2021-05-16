@@ -175,7 +175,7 @@ MonoBehaviour:
   damage: 1
   damageMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   OnDamage:
     m_PersistentCalls:
       m_Calls:
