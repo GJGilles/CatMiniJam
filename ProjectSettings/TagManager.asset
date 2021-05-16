@@ -13,9 +13,9 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
-  - 
-  - 
+  - PlayerProjectile
+  - EnemyProjectile
+  - Spikes
   - 
   - 
   - 
@@ -38,6 +38,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2390139681
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

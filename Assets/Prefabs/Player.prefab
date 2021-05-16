@@ -646,7 +646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
-  iTime: 0.5
+  iTime: 1
+  flashTime: 0.1
   OnDamage:
     m_PersistentCalls:
       m_Calls:
