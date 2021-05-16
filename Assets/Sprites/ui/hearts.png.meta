@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: c7fde7c31e750d548811edf480076f3c
+guid: a1f9098c1d5c3b34d83d47507dad0c05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5865623435603368383
-    second: painting-1_0
+      213: 1564688358316481467
+    second: hearts_0
   - first:
-      213: 6498254141692685625
-    second: painting-1_1
-  - first:
-      213: 3438497144710970338
-    second: painting-1_2
-  - first:
-      213: 4864640571889672344
-    second: painting-1_3
+      213: 5726080727020278575
+    second: hearts_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: painting-1_0
+      name: hearts_0
       rect:
         serializedVersion: 2
         x: 0
@@ -117,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 146a7ae009e199ea0800000000000000
-      internalID: -5865623435603368383
+      spriteID: bbb94a595c3e6b510800000000000000
+      internalID: 1564688358316481467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: painting-1_1
+      name: hearts_1
       rect:
         serializedVersion: 2
         x: 8
@@ -138,50 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93dadcf66bf6e2a50800000000000000
-      internalID: 6498254141692685625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting-1_2
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eb31b76feef7bf20800000000000000
-      internalID: 3438497144710970338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: painting-1_3
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 890ef6f73dca28340800000000000000
-      internalID: 4864640571889672344
+      spriteID: f2311494510277f40800000000000000
+      internalID: 5726080727020278575
       vertices: []
       indices: 
       edges: []
