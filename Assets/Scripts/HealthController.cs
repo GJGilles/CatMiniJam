@@ -44,11 +44,11 @@ namespace Assets.Scripts
             if (iRemain <= 0)
             {
                 currHealth -= damage;
-                if (currHealth <= 0)
+                if (currHealth == 0)
                 {
                     OnDeath.Invoke();
                 }
-                else
+                else if (currHealth > 0)
                 {
                     iRemain = iTime;
                     OnDamage.Invoke();

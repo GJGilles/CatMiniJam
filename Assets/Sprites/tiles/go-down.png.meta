@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: a1f9098c1d5c3b34d83d47507dad0c05
+guid: 69dc2b53868361a4298b0a3397a55e3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1564688358316481467
-    second: hearts_0
+      213: 989414329740533035
+    second: go-down_0
   - first:
-      213: 5726080727020278575
-    second: hearts_1
+      213: -2032449380208372684
+    second: go-down_1
+  - first:
+      213: -3348794336853930698
+    second: go-down_2
+  - first:
+      213: -6535242166551032195
+    second: go-down_3
+  - first:
+      213: -5147029938360627616
+    second: go-down_4
+  - first:
+      213: 6021651945214869516
+    second: go-down_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,43 +109,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hearts_0
+      name: go-down_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d9ddb371b1bbd00800000000000000
+      internalID: 989414329740533035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go-down_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 16
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43497bc9e0a4bc3e0800000000000000
+      internalID: -2032449380208372684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go-down_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d4bf51b41b681d0800000000000000
+      internalID: -3348794336853930698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go-down_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e429defd72e45a0800000000000000
+      internalID: -6535242166551032195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: go-down_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 8
         height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbb94a595c3e6b510800000000000000
-      internalID: 1564688358316481467
+      spriteID: 06ec6bb8a831298b0800000000000000
+      internalID: -5147029938360627616
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hearts_1
+      name: go-down_5
       rect:
         serializedVersion: 2
         x: 8
         y: 0
         width: 8
         height: 8
-      alignment: 1
-      pivot: {x: 0, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2311494510277f40800000000000000
-      internalID: 5726080727020278575
+      spriteID: c0082934a84319350800000000000000
+      internalID: 6021651945214869516
       vertices: []
       indices: 
       edges: []
