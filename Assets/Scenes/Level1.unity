@@ -7607,25 +7607,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2159721207961421235, guid: 093f01c8019e302418122b3749b21253, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
       propertyPath: hc
       value: 
       objectReference: {fileID: 1268805501}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: offset.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: offset.y
-      value: -10
-      objectReference: {fileID: 0}
     - target: {fileID: 8199363442073408416, guid: 093f01c8019e302418122b3749b21253, type: 3}
       propertyPath: m_Name
       value: Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 8199363442073408418, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8199363442073408420, guid: 093f01c8019e302418122b3749b21253, type: 3}
       propertyPath: m_Pivot.x
@@ -41935,22 +41927,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
       propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1179094718}
@@ -41958,42 +41934,6 @@ PrefabInstance:
       propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1179094718}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: TakeDamage
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: TakeDamage
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: Assets.Scripts.HealthUI, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: Assets.Scripts.HealthUI, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3276446240737719235, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
-      propertyPath: OnDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 151d646e1237e7241b0639fd6b52645c, type: 3}
 --- !u!114 &1268805501 stripped

@@ -24,8 +24,13 @@ namespace Assets.Scripts
         public void TakeDamage()
         {
             currentHealth--;
-            Destroy(transform.GetChild(currentHealth).gameObject);
+            Destroy(transform.GetChild(currentHealth + 1).gameObject);
             Instantiate(emptyHeart, transform).GetComponent<RectTransform>().anchoredPosition = offset + new Vector2(100 * currentHealth, 0);
+
+            if (currentHealth == 0)
+            {
+                transform.GetChild(0).gameObject.SetActive(true);
+            }
         }
 
     }

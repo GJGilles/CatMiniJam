@@ -100183,33 +100183,9 @@ PrefabInstance:
       propertyPath: hc
       value: 
       objectReference: {fileID: 1131032082}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: offset.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: offset.y
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: fullHeart
-      value: 
-      objectReference: {fileID: 588909494814424328, guid: 4ffaa50f1805e19489fd483ffb92169f, type: 3}
-    - target: {fileID: 8163932936788184112, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: emptyHeart
-      value: 
-      objectReference: {fileID: 1910310211535786767, guid: 51cb4c14263acdf469ae27ba6aef59fa, type: 3}
     - target: {fileID: 8199363442073408416, guid: 093f01c8019e302418122b3749b21253, type: 3}
       propertyPath: m_Name
       value: Health
-      objectReference: {fileID: 0}
-    - target: {fileID: 8199363442073408418, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: m_ScreenMatchMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8199363442073408418, guid: 093f01c8019e302418122b3749b21253, type: 3}
-      propertyPath: m_MatchWidthOrHeight
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8199363442073408420, guid: 093f01c8019e302418122b3749b21253, type: 3}
       propertyPath: m_Pivot.x

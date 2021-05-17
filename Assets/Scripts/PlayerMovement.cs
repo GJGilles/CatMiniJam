@@ -61,6 +61,7 @@ namespace Assets.Scripts
 		public void Die()
         {
 			InputManager.BlockKeys(1);
+			Time.timeScale = 0;
         }
 
 		public void Start()
