@@ -99895,7 +99895,7 @@ PrefabInstance:
       objectReference: {fileID: 4839077144343628315}
     - target: {fileID: 2206376679581706493, guid: aaea910a31850944da84e80c91c4e055, type: 3}
       propertyPath: PlayerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadSceneLevel1
+      value: LoadSceneEnd
       objectReference: {fileID: 0}
     - target: {fileID: 2206376679581706494, guid: aaea910a31850944da84e80c91c4e055, type: 3}
       propertyPath: m_RootOrder

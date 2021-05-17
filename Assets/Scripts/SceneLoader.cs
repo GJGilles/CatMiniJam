@@ -9,8 +9,10 @@ namespace Assets.Scripts
         public enum SceneEnum
         {
             None = -1,
+            StartScene,
             Level1,
             Level2,
+            EndScene
         }
 
         public float entryTime = 0.5f;
@@ -64,8 +66,10 @@ namespace Assets.Scripts
 
         #region Scene Loaders
 
+        public void LoadSceneStart() { LoadScene(SceneEnum.StartScene.ToString()); }
         public void LoadSceneLevel1() { LoadScene(SceneEnum.Level1.ToString()); }
         public void LoadSceneLevel2() { LoadScene(SceneEnum.Level2.ToString()); }
+        public void LoadSceneEnd() { LoadScene(SceneEnum.EndScene.ToString()); }
 
         #endregion
 
