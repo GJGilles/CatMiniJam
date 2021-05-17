@@ -16,6 +16,7 @@ namespace Assets.Scripts
 		public float fireCooldown = 0.2f;
 		public GameObject projectile;
 		public float projectileSpeed = 1f;
+		public GameObject cameraObj;
 
 		private bool isFacing = true;
 		private bool isMoving = false;
@@ -62,6 +63,8 @@ namespace Assets.Scripts
         {
 			InputManager.BlockKeys(1);
 			Time.timeScale = 0;
+			cameraObj.GetComponent<AudioSource>().Stop();
+
         }
 
 		public void Start()
