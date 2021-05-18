@@ -79,8 +79,8 @@ namespace Assets.Scripts
 		public void Update()
 		{
 			inputMove = InputManager.GetHorzAxis(inputLevel);
-			inputJump = InputManager.GetKey(KeyCode.Space, inputLevel);
-			inputFire = InputManager.GetKey(KeyCode.LeftShift, inputLevel);
+			inputJump = InputManager.GetJump(inputLevel);
+			inputFire = InputManager.GetFire(inputLevel);
 		}
 
 		public void FixedUpdate()

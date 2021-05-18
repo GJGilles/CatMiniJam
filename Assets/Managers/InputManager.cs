@@ -8,26 +8,6 @@ namespace Assets.Managers
     {
         private static int keyBlockLevel = 0;
 
-        public static bool GetKey(KeyCode key, int level)
-        {
-            if (level >= keyBlockLevel)
-            {
-                return Input.GetKey(key);
-            }
-            else
-                return false;
-        }
-
-        public static bool GetKeyDown(KeyCode key, int level)
-        {
-            if (level >= keyBlockLevel)
-            {
-                return Input.GetKeyDown(key);
-            }
-            else
-                return false;
-        }
-
         public static float GetHorzAxis(int level)
         {
             if (level >= keyBlockLevel)
@@ -36,6 +16,36 @@ namespace Assets.Managers
             }
             else
                 return 0f;
+        }
+
+        public static bool GetJump(int level)
+        {
+            if (level >= keyBlockLevel)
+            {
+                return Input.GetAxisRaw("Jump") != 0f;
+            }
+            else
+                return false;
+        }
+
+        public static bool GetFire(int level)
+        {
+            if (level >= keyBlockLevel)
+            {
+                return Input.GetAxisRaw("Fire1") != 0f;
+            }
+            else
+                return false;
+        }
+
+        public static bool GetRetry(int level)
+        {
+            if (level >= keyBlockLevel)
+            {
+                return Input.GetAxisRaw("Fire2") != 0f;
+            }
+            else
+                return false;
         }
 
         public static bool BlockKeys(int level)

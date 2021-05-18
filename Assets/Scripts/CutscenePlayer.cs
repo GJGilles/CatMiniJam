@@ -49,7 +49,7 @@ namespace Assets.Scripts
             }
             else if (!textDone)
             {
-                if (InputManager.GetKey(KeyCode.Space, inputLevel))
+                if (InputManager.GetJump(inputLevel))
                 {
                     textTime += Time.deltaTime * buttonMulti;
                 }

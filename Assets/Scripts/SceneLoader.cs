@@ -31,7 +31,7 @@ namespace Assets.Scripts
 
         public void Update()
         {
-            if (InputManager.GetKey(KeyCode.R, inputLevel))
+            if (InputManager.GetRetry(inputLevel))
             {
                 string scene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
                 LoadScene(scene);
